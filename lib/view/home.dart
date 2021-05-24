@@ -47,11 +47,12 @@ class QrCode extends StatelessWidget {
         gradient: qrcanada(),
       ),
       child: PrettyQr(
-        image: AssetImage('assets/syrup.png'),
-        size: 300.0,
-        typeNumber: 3,
-        data: "ethereum smart",
-      ),
+          image: AssetImage('assets/syrup2.png'),
+          typeNumber: 3,
+          size: 300.0,
+          data: "ethereum smart",
+          errorCorrectLevel: QrErrorCorrectLevel.M,
+          roundEdges: true),
     );
   }
 }
