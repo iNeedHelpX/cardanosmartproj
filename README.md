@@ -13,7 +13,6 @@ There are a few important concerns to account for in this new reality, and thus 
 
 Taking a look at a few apps on the market already, I was thinking I could do these apps better, as I saw some practices I did not quite like- mainly to do with people storing information in databases and showing highly detailed information that's irrelevant and perhaps too sensitive(I really don't think the guy at Border counter needs to know the brand name of the vaccine you got and the date you received it, HOWEVER he would need to know that your vaccine is valid, on the official approval list and is within the acceptable date range).
 
-# Update May 22 2021: I'm not adding code yet but it will soon be here:).
 
 # Set up the dev environment
 
