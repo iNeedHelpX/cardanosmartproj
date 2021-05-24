@@ -1,5 +1,6 @@
 import 'package:cardanosmartproj/model/colors.dart';
 import 'package:cardanosmartproj/model/gradappbar.dart';
+import 'package:cardanosmartproj/model/gradcanada.dart';
 import 'package:flutter/material.dart';
 
 AppBar appBar1() {
@@ -14,7 +15,7 @@ AppBar appBar1() {
       ),
       child: Container(
         decoration: BoxDecoration(
-          gradient: gradApp(),
+          gradient: canada(),
         ),
       ),
     ),

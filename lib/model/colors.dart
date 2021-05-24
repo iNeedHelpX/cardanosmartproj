@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+const canadacolor = Color.fromARGB(255, 229, 0, 61);
 const bluish = Color.fromARGB(255, 48, 48, 111);
 const solidblue = Color.fromARGB(255, 52, 45, 207);
 const background = Color.fromARGB(255, 33, 32, 43);

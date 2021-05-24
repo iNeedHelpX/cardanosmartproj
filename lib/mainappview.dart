@@ -60,7 +60,7 @@ class _HomeViewState extends State<HomeView>
                 Radius.circular(20.0),
               ),
               child: Container(
-                color: niceback3,
+                color: canadacolor,
                 child: TabBar(
                   labelColor: text3,
                   unselectedLabelColor: text2,
