@@ -50,7 +50,7 @@ class QrCode extends StatelessWidget {
           image: AssetImage('assets/flags.png'),
           typeNumber: 8,
           size: 300.0,
-          data: "ethereum smart contract",
+          data: "Julia Pak 9550 392 436 RX is not vaccinated yet",
           errorCorrectLevel: QrErrorCorrectLevel.M,
           roundEdges: true),
     );
