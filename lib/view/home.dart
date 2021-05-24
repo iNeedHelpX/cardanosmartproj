@@ -48,9 +48,9 @@ class QrCode extends StatelessWidget {
       ),
       child: PrettyQr(
           image: AssetImage('assets/flags.png'),
-          typeNumber: 3,
+          typeNumber: 8,
           size: 300.0,
-          data: "ethereum smart",
+          data: "ethereum smart contract",
           errorCorrectLevel: QrErrorCorrectLevel.M,
           roundEdges: true),
     );
