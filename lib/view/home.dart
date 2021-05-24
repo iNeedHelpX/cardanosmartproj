@@ -1,5 +1,6 @@
 import 'package:cardanosmartproj/model/colors.dart';
 import 'package:cardanosmartproj/model/grad2.dart';
+import 'package:cardanosmartproj/model/qrbackcanada.dart';
 import 'package:cardanosmartproj/model/qrgrad.dart';
 import 'package:cardanosmartproj/model/qrgrad2.dart';
 import 'package:cardanosmartproj/view/title.dart';
@@ -43,7 +44,7 @@ class QrCode extends StatelessWidget {
       padding: EdgeInsets.all(5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
-        gradient: qrgrad2(),
+        gradient: qrcanada(),
       ),
       child: QrImage(
         data: "ethereum smart",
