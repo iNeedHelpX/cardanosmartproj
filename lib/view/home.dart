@@ -50,7 +50,7 @@ class QrCode extends StatelessWidget {
           image: AssetImage('assets/flags.png'),
           typeNumber: 8,
           size: 300.0,
-          data: "Julia Pak 9550 392 436 is not vaccinated yet",
+          data: "Julia Pak 9550 392 436 is not registered",
           errorCorrectLevel: QrErrorCorrectLevel.M,
           roundEdges: true),
     );
