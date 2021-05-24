@@ -4,7 +4,8 @@
 
 **May 23 2021: NOTE that is project is not complete.No where near it, still needs ALOT of work.No test cases done yet. And the code thusfar is only the client side**
 This is a block chain vaccine validation app. This app is based on the Ethereum smart contracts. Vaccines are slowly but surely making their way into people's arms around the world. As this happens, to protect citizens, governments around the globe will most likely be introducing changes to the rules of entry/exit for travellers involving the proof of mandatory vaccination with one of the certified vaccines.
-![Simulator Screen Shot - iPhone 11 Pro Max - 2021-05-24 at 04 23 55](https://user-images.githubusercontent.com/41366455/119319470-7ade7a80-bc48-11eb-9521-f51a270882ee.png)
+
+![Simulator Screen Shot - iPhone 11 Pro Max - 2021-05-24 at 04 23 55](https://user-images.githubusercontent.com/41366455/119319566-9c3f6680-bc48-11eb-8d18-462d3f9a96f3.png)
 
 
 # Addressing the issues surrounding People being physically assaulted or attacked due to these apps in general
