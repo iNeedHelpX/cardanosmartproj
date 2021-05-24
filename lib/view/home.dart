@@ -5,7 +5,7 @@ import 'package:cardanosmartproj/model/qrgrad.dart';
 import 'package:cardanosmartproj/model/qrgrad2.dart';
 import 'package:cardanosmartproj/view/title.dart';
 import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
+import 'package:pretty_qr_code/pretty_qr_code.dart';
 
 class Home extends StatelessWidget {
   const Home({Key key}) : super(key: key);
@@ -46,10 +46,11 @@ class QrCode extends StatelessWidget {
         borderRadius: BorderRadius.circular(24),
         gradient: qrcanada(),
       ),
-      child: QrImage(
-        data: "ethereum smart",
-        version: QrVersions.auto,
+      child: PrettyQr(
+        image: AssetImage('images/twitter.png'),
         size: 300.0,
+        typeNumber: 3,
+        data: "ethereum smart",
       ),
     );
   }

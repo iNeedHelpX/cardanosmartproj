@@ -11,7 +11,7 @@ class CovidTitle extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: solidblue,
+        color: canadacolor2,
         borderRadius: BorderRadius.circular(15),
       ),
       child: Text(
