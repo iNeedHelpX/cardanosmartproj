@@ -56,6 +56,7 @@ flutter:
     - assets/syrup2.png
     - assets/marker.png
     - assets/can1.png
+    - assets/hockey.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

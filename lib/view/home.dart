@@ -47,7 +47,7 @@ class QrCode extends StatelessWidget {
         gradient: qrcanada(),
       ),
       child: PrettyQr(
-          image: AssetImage('assets/can1.png'),
+          image: AssetImage('assets/hockey.png'),
           typeNumber: 3,
           size: 300.0,
           data: "ethereum smart",
