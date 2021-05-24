@@ -40,7 +40,7 @@ AppBar appBar1() {
               Padding(
                 padding: EdgeInsets.all(10),
                 child: Text(
-                  'Ethereum smart Vaccine Passport',
+                  'Smart Vaxx',
                   style: TextStyle(
                       fontSize: 18,
                       color: background,
