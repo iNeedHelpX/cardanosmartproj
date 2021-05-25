@@ -42,8 +42,8 @@ AppBar appBar1() {
                 child: Text(
                   'Smart Vaxx',
                   style: TextStyle(
-                      fontSize: 18,
-                      color: background,
+                      fontSize: 22,
+                      color: verylight,
                       fontWeight: FontWeight.w900),
                 ),
               ),
