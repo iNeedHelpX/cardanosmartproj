@@ -8,6 +8,7 @@
 .buildlog/
 .history
 .svn/
+cardanosmartproj/README.md
 
 # IntelliJ related
 *.iml
@@ -33,6 +34,7 @@
 **/lib/contract_linker/linker.dart
 # Web related
 lib/generated_plugin_registrant.dart
+
 
 # Symbolication related
 app.*.symbols
