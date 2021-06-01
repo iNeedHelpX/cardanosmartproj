@@ -1,8 +1,4 @@
-import 'package:cardanosmartproj/model/colors.dart';
-import 'package:cardanosmartproj/model/grad2.dart';
 import 'package:cardanosmartproj/model/qrbackcanada.dart';
-import 'package:cardanosmartproj/model/qrgrad.dart';
-import 'package:cardanosmartproj/model/qrgrad2.dart';
 import 'package:cardanosmartproj/view/title.dart';
 import 'package:flutter/material.dart';
 import 'package:pretty_qr_code/pretty_qr_code.dart';
