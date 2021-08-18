@@ -55,6 +55,7 @@ My LinkedIn: https://www.linkedin.com/in/julia-pak0444<br><br>
 <img width="483" alt="Screen Shot 2021-05-19 at 7 03 28 PM" src="https://user-images.githubusercontent.com/41366455/119244190-f30b4a00-bb3b-11eb-8918-9318345a13bd.png"><br><br>
 # Donate ADA Cardano
 Send to this address:
+
 ```
 DdzFFzCqrht3DeEfx6b8y4oERARDANN3fqp58q1qtXLKjnTcspsQtN9Gfovu224rBkPJbRk9ABBjzZhEovxQ8wQhtPnYsKTFqrZrEzyY
 ```
