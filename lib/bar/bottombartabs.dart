@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 List tabs() {
   return <Widget>[
     Tab(
-      icon: Icon(Icons.qr_code_scanner),
+      icon:Icon(Icons.qr_code_scanner),
       text: 'Scan',
     ),
     Tab(
