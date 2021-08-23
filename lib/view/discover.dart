@@ -9,17 +9,11 @@ class InfoNow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.center,
-      padding: EdgeInsets.all(18),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(24),
-        gradient: grad1(),
-      ),
       child: Center(
         child: Text(
-          'Covid status on ethereum',
+          'App Info',
           style: TextStyle(
-              color: text2, fontSize: 48, fontWeight: FontWeight.w700),
+              color: text3, fontSize: 48, fontWeight: FontWeight.w700),
         ),
       ),
     );

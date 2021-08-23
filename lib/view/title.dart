@@ -15,7 +15,7 @@ class CovidTitle extends StatelessWidget {
         borderRadius: BorderRadius.circular(15),
       ),
       child: Text(
-        'Scan your QR Code for check-in',
+        'Scan this QR Code to see status',
         style: TextStyle(
             fontSize: 24, color: lightyellow, fontWeight: FontWeight.w900),
       ),
