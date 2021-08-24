@@ -1,11 +1,19 @@
 import 'package:cardanosmartproj/model/colors.dart';
 import 'package:cardanosmartproj/model/gradcanada.dart';
 import 'package:flutter/material.dart';
+import 'package:cardanosmartproj/view/home.dart';
 
+bool isCollapsed = true;
 AppBar appBar1() {
   return AppBar(
     leading: Padding(
       padding: const EdgeInsets.all(10),
+      child: IconButton(
+        icon: Icon(Icons.menu),
+        onPressed: () {
+          Home();
+        },
+      ),
     ),
     flexibleSpace: ClipRRect(
       borderRadius: BorderRadius.only(
