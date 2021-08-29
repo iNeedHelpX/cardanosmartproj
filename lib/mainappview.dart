@@ -1,7 +1,7 @@
 import 'package:cardanosmartproj/bar/bottombartabs.dart';
 import 'package:cardanosmartproj/model/colors.dart';
+import 'package:cardanosmartproj/model/gradcanada.dart';
 import 'package:cardanosmartproj/view/account.dart';
-import 'package:cardanosmartproj/view/appbar.dart';
 import 'package:cardanosmartproj/view/discover.dart';
 import 'package:cardanosmartproj/view/home.dart';
 import 'package:flutter/material.dart';
@@ -11,12 +11,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primaryColor: deeppurpleback,
-        primaryColorLight: pinkpurback,
-        accentColor: nicepurback,
-      ),
       home: HomeView(),
     );
   }
@@ -31,6 +25,7 @@ class HomeView extends StatefulWidget {
 
 class _HomeViewState extends State<HomeView>
     with SingleTickerProviderStateMixin {
+  bool isCollapsed = true;
   TabController _tabController;
   @override
   void initState() {
@@ -44,7 +39,7 @@ class _HomeViewState extends State<HomeView>
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         //backgroundColor: Colors.yellow.shade500.withOpacity(0.8),
-        appBar: appBar1(),
+        appBar: appbar1(),
         body: SafeArea(
           child: Center(
             child: tabsPage(),
@@ -89,6 +84,71 @@ class _HomeViewState extends State<HomeView>
         //     color: bag,
         //   ),
         // ),
+      ),
+    );
+  }
+
+  AppBar appbar1() {
+    return AppBar(
+      leading: Padding(
+        padding: const EdgeInsets.all(10),
+        child: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {
+            setState(() {
+              isCollapsed = !isCollapsed;
+            });
+          },
+        ),
+      ),
+      flexibleSpace: ClipRRect(
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(20),
+          bottomRight: Radius.circular(20),
+        ),
+        child: Container(
+          decoration: BoxDecoration(
+            gradient: canada(),
+          ),
+        ),
+      ),
+      elevation: 10,
+      shadowColor: Colors.grey,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          bottomLeft: Radius.circular(20),
+          bottomRight: Radius.circular(20),
+        ),
+      ),
+      bottom: PreferredSize(
+        preferredSize: Size.fromHeight(60),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Text(
+                    'Smart Vaxx',
+                    style: TextStyle(
+                        fontSize: 22,
+                        color: verylight,
+                        fontWeight: FontWeight.w900),
+                  ),
+                ),
+                SizedBox(height: 10)
+              ],
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 45),
+            ),
+            SizedBox(height: 20)
+          ],
+        ),
       ),
     );
   }

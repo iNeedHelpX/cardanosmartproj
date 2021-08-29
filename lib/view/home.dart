@@ -1,6 +1,4 @@
-import 'package:cardanosmartproj/model/colors.dart';
 import 'package:cardanosmartproj/model/qrbackcanada.dart';
-import 'package:cardanosmartproj/view/appbar.dart';
 import 'package:cardanosmartproj/view/title.dart';
 import 'package:flutter/material.dart';
 import 'package:pretty_qr_code/pretty_qr_code.dart';
@@ -17,7 +15,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Container(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(30, 0, 30, 0),
+        padding: const EdgeInsets.fromLTRB(20, 0, 20, 0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -44,7 +42,7 @@ class QrCode extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       alignment: Alignment.center,
-      padding: EdgeInsets.all(5),
+      padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(24),
         gradient: qrcanada(),
@@ -52,9 +50,9 @@ class QrCode extends StatelessWidget {
       child: PrettyQr(
           image: AssetImage('assets/flags.png'),
           typeNumber: 9,
-          size: 300.0,
+          size: 350.0,
           data:
-              "https://mail.google.com/mail/u/1/#inbox/FMfcgzGkZstpSDXTFxLwVTDQhNVVTdvX?projector=1&messagePartId=0.1",
+              'https://docs.google.com/document/d/1prXywSoCb0bGgr7cLIaAiuXKu4n2mKm5Q1rdV9Piurc/edit?usp=sharing',
           errorCorrectLevel: QrErrorCorrectLevel.M,
           roundEdges: true),
     );
