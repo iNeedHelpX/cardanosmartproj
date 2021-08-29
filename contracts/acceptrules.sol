@@ -1,6 +1,7 @@
-pragma solidity ^0.6.0;
+pragma solidity >=0.4.22 <0.9.0;
 
-SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: MIT
+
 pragma experimental ABIEncoderV2;
 
 import "./safemath.sol";
@@ -29,10 +30,9 @@ contract VaccinationAcceptanceRules {
         ruleSet.isRegistered = true;
         ruleSet.timeBeforeDeparture = _timeBeforeDeparture;
         for (uint256 i = 0; i < _acceptedVaccines.length; i++) {
-            bytes32 vaccineId =
-                keccak256(
-                    abi.encode(_acceptedVaccines[i][0], _acceptedVaccines[i][1])
-                );
+            bytes32 vaccineId = keccak256(
+                abi.encode(_acceptedVaccines[i][0], _acceptedVaccines[i][1])
+            );
             ruleSet.vaccines[vaccineId] = true;
         }
     }
@@ -53,8 +53,9 @@ contract VaccinationAcceptanceRules {
             "Vaccination is outdated. Expired."
         );
 
-        bytes32 vaccineId =
-            keccak256(abi.encode(_vaccineCodeType, _vaccineCode));
+        bytes32 vaccineId = keccak256(
+            abi.encode(_vaccineCodeType, _vaccineCode)
+        );
         bool acceptedVaccine = ruleSet.vaccines[vaccineId];
         require(acceptedVaccine, "Unaccepted");
     }
